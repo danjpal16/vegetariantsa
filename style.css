@@ -1,0 +1,15 @@
+.titlediv {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+
+.title {
+    font-size: 4rem;
+}
+
+
+.logo {
+    width: 375px;
+}
