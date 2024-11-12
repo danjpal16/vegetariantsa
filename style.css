@@ -1,15 +1,19 @@
-.titlediv {
+body {
     background-color: black;
-    height: auto;
-    width: 100%;
 }
 
-.title {
-    font-size: 4rem;
+.titletext {
+    position: absolute;
 }
 
 .logo {
     width: 375px;
 }
 
+.ournav {
+    justify-content: center;
+}
 
+.logotop {
+    justify-content: center;
+}
