@@ -4,16 +4,42 @@ body {
 
 .titletext {
     position: absolute;
-}
-
-.logo {
-    width: 375px;
+    padding-top: 450px;
+    font-size: 7.5rem;
 }
 
 .ournav {
     justify-content: center;
 }
 
-.logotop {
-    justify-content: center;
+.navtext {
+}
+
+.col-4 {
+    position: relative;
+    display: inline-block;
+    width: 33.33%; /* Adjust based on your layout */
+}
+
+a {
+    display: block;
+    position: relative;
+    text-decoration: none; /* Optional: remove underline from the link */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem; /* Adjust as needed */
+    text-align: center;
+    font-weight: bold;
+    z-index: 10; /* Ensure it appears above the image */
 }
