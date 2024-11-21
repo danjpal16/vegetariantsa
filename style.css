@@ -4,7 +4,7 @@ body {
 
 .titletext {
     position: absolute;
-    padding-top: 450px;
+    padding-top: 550px;
     font-size: 7.5rem;
 }
 
@@ -42,4 +42,8 @@ img {
     text-align: center;
     font-weight: bold;
     z-index: 10; /* Ensure it appears above the image */
+}
+
+.logoimg {
+    width: 350px;
 }
