@@ -12,9 +12,6 @@ body {
     justify-content: center;
 }
 
-.navtext {
-}
-
 .col-4 {
     position: relative;
     display: inline-block;
@@ -48,6 +45,3 @@ img {
     width: 350px;
 }
 
-.menuimg {
-    width: 75%;
-}

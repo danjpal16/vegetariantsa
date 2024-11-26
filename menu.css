@@ -1,0 +1,207 @@
+body {
+    background-color: black;
+}
+.col-4 {
+    position: relative;
+    display: inline-block;
+    width: 33.33%;
+}
+
+a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.logoimg {
+    width: 350px;
+}
+
+.navbar{
+    z-index: 2;
+    font-size: 25px;
+    font-family: "basic-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    height: 2px; /* Adjust thickness as needed */
+    background-color: transparent;
+    transition: right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Adjust timing function as desired */
+  }
+  
+  .nav-link:hover::before {
+    right: 0;
+    background-color: white; /* Adjust color as needed */
+  }
+  
+  .navbar {
+    background: none;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .nav-item {
+    margin: 0 10px; /* Adjust spacing between items */
+  }
+  
+  .navbar-toggler-icon {
+    border-radius: 5px;
+  }
+
+
+  /* gallery */
+main{
+    /* 	width: 40rem; */
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    section {
+      width: 40rem;
+      max-width: 100%;
+      margin: 0 auto;
+      display: grid;
+      gap: var(--size-4);
+    }
+    
+    section p {
+      padding: 0 var(--size-6);
+    }
+    
+    main {
+      background: var(--surface-2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: var(--size-4);
+      margin-bottom: var(--size-10);
+      max-width: 100vw;
+      padding: var(--size-4) 0;
+    /* 	overflow: hidden; */
+    }
+    
+    .photo-block {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      position: sticky;
+      top: calc(50% - 30vh);
+      height: 60vh;
+      width: 100;
+      display: grid;
+      overflow: hidden;
+      background: var(--gray-6);
+      border: 7px solid white;
+    }
+    
+    .photo-grid {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(38deg);
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+    
+    .photo {
+      aspect-ratio: 3 / 4;
+      width: 20vmax;
+    }
+    
+    .collage {
+      height: 200vh;
+      view-timeline: --collage;
+    }
+    
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .photo:nth-of-type(7n + 1):nth-of-type(even),
+    .photo:nth-of-type(7n + 3):nth-of-type(even),
+    .photo:nth-of-type(7n + 5):nth-of-type(even),
+    .photo:nth-of-type(7n + 7):nth-of-type(even) {
+      --vertical: -100%;
+      --horizontal: 100%;
+    }
+    .photo:nth-of-type(7n + 1):nth-of-type(odd),
+    .photo:nth-of-type(7n + 3):nth-of-type(odd),
+    .photo:nth-of-type(7n + 5):nth-of-type(odd),
+    .photo:nth-of-type(7n + 7):nth-of-type(odd) {
+      --vertical: -100%;
+      --horizontal: -100%;
+    }
+    
+    .photo:nth-of-type(7n + 2):nth-of-type(even),
+    .photo:nth-of-type(7n + 4):nth-of-type(even),
+    .photo:nth-of-type(7n + 6):nth-of-type(even) {
+      --vertical: 100%;
+      --horizontal: -100%;
+    }
+    
+    .photo:nth-of-type(7n + 2):nth-of-type(odd),
+    .photo:nth-of-type(7n + 4):nth-of-type(odd),
+    .photo:nth-of-type(7n + 6):nth-of-type(odd) {
+      --vertical: 100%;
+      --horizontal: 100%;
+    }
+    
+    .photo {
+      animation-name: travel;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: --collage;
+      animation-range: entry 100% exit 0%;
+    }
+    
+    @keyframes travel {
+      0% {
+        translate: 0 0;
+      }
+      50% {
+        translate: 0 var(--vertical);
+      }
+      100% {
+        translate: var(--horizontal) var(--vertical);
+      }
+    }
+  
+  .containercaro{
+    margin-bottom: 100px;
+  }
+  /* gallery pics */
