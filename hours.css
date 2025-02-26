@@ -61,6 +61,9 @@ a {
     display: block;
     position: relative;
     text-decoration: none;
+    font-family: "Londrina Outline", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .logo {
