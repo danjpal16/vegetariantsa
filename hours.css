@@ -113,3 +113,7 @@ p {
     font-size: 18px;
     color: #333;
 }
+
+body {
+  background-image: url('imgs/background.webp');
+}
