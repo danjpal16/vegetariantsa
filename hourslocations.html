@@ -26,13 +26,27 @@
         <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
             <ul class="nav flex-column w-100">
                 <li class="nav-link">
-                    <a href="index.html"><span class="mx-2" style="color: rgb(162, 227, 64);">Home</span></a>
+                    <a href="index.html"><span class="m-3" style="color: rgb(162, 227, 64);">Home</span></a>
                 </li>
-                <li href="#" class="nav-link">
-                    <span class="mx-2" style="color: rgb(162, 227, 64);">Profile</span>
+                <li class="nav-link">
+                    <a href="menu.html"><span class="m-3" style="color: rgb(162, 227, 64);">Menu</span></a>
                 </li>
-                <li href="#" class="nav-link">
-                    <span class="mx-2" style="color: rgb(162, 227, 64);">Contact</span>
+                <li class="nav-link">
+                    <a href="aboutus.html"><span class="m-3" style="color: rgb(162, 227, 64);">About Us</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="reservations.html"><span class="m-3"
+                            style="color: rgb(162, 227, 64);">Reservations</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="hourslocations.html"><span class="m-3"
+                            style="color: rgb(162, 227, 64);">Hours/Locations</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="team.html"><span class="m-3" style="color: rgb(162, 227, 64);">Team</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="events.html"><span class="m-3" style="color: rgb(162, 227, 64);">Events</span></a>
                 </li>
             </ul>
         </div>
@@ -54,20 +68,60 @@
                 <div class="photo-container bg-black p-2 rounded-2">
                     <img src="imgs/locport.webp" alt="Image 1">
                     <p>Located in 1234 NW Maple St, Portland, OR 97209</p>
+                    <p>Monday-Friday: 12am-9pm</p>
+                    <p>Saturday & Sunday: 12pm-10pm</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" style="background-color: rgb(162, 227, 64);"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Yelp Review: 4.6/5
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Yelp Reviews</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>4.8: "Great experience, but a few small issues"
+                                            Loved the atmosphere and the food was mostly delicious. My steak was cooked
+                                            perfectly, and the cocktails were well-crafted. However, service was a bit
+                                            slow, and our appetizer took nearly 30 minutes to arrive. Not a dealbreaker,
+                                            but something to improve on. Still, I’d definitely recommend it!</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="photo-container bg-black p-2 rounded-2">
                     <img src="imgs/loclos.avif" alt="Image 2">
                     <p>Located in 5678 Sunset Blvd, Los Angeles, CA 90028</p>
+                    <p>Monday-Thursday: 10am-10pm</p>
+                    <p>Friday-Sunday: 10am-11pm</p>
                 </div>
             </div>
             <div class="row">
                 <div class="photo-container bg-black p-2 rounded-2">
                     <img src="imgs/locflor2.webp" alt="Image 3">
                     <p>Located in 4321 Orange Ave, Orlando, FL 32801</p>
+                    <p>Monday-Saturday: 11am-10pm</p>
+                    <p>Sunday: Closed</p>
                 </div>
                 <div class="photo-container bg-black p-2 rounded-2">
                     <img src="imgs/locsan2.webp" alt="Image 4">
                     <p>Located in 9876 Bay Street, San Francisco, CA 94109</p>
+                    <p>Monday-Friday: 11am-9pm</p>
+                    <p>Saturday & Sunday: 12pm-10pm</p>
                 </div>
             </div>
         </div>

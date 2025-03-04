@@ -42,7 +42,7 @@ body {
 #menu-btn {
   background-color: white;
   color: black;
-  margin-left: -62px;
+  margin-left: -40px;
 }
 
 .my-container input {
@@ -97,7 +97,6 @@ a {
 }
 .photo-container {
     width: 48%;
-    text-align: center;
 }
 img {
     width: 100%;
@@ -110,4 +109,5 @@ p {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
+    color: rgb(162, 227, 64);
 }
