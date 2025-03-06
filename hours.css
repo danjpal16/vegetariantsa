@@ -9,6 +9,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  background-image: url('imgs/whitebrickwall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .side-navbar {
@@ -109,5 +112,5 @@ p {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
-    color: rgb(162, 227, 64);
+    color: #A4BF20;
 }
