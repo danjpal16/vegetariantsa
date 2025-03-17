@@ -1,104 +1,107 @@
-body {
-    background-color: black;
-    background-image: url('imgs/background.webp');
-}
-
-.navbar{
-    z-index: 2;
-    font-size: 25px;
-    font-family: "basic-sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-.nav-link {
-    position: relative;
-    text-decoration: none;
-    overflow: hidden;
-  }
-  
-  .nav-link::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    height: 2px; /* Adjust thickness as needed */
-    background-color: transparent;
-    transition: right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Adjust timing function as desired */
-  }
-  
-  .nav-link:hover::before {
-    right: 0;
-    background-color: white; /* Adjust color as needed */
-  }
-  
-  .navbar {
-    background: none;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .nav-item {
-    margin: 0 10px; /* Adjust spacing between items */
-  }
-  
-  .navbar-toggler-icon {
-    border-radius: 5px;
-  }
-
-  .aboutheader {
-    width: 100vw;
-    height: 100vh; 
-    object-fit: cover; 
-    position: relative;
+.aboutheader {
+  width: 100vw;
+  height: 100vh; 
+  object-fit: cover; 
+  position: relative;
 }
 /* about cards */
 .aboutpic1 {
-    border-radius: 15px 50px 50px 15px;
-    border: 5px solid white;
-  
-  }
-  
-  .aboutpic2 {
-    border-radius: 50px 15px 15px 50px;
-    border: 5px solid white;
-  }
-  
-  .aboutpic3 {
-    border-radius: 15px 50px 50px 15px;
-    border: 5px solid white;
-  }
-  
-  .hr {
-    border-top: 5px solid rgb(255, 255, 255);
-    opacity: 1;
-    width: 50%;
-  }
-  
-  .row1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .row2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .row3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container1 {
-    margin-top: 200px;
-  }
+  border-radius: 15px 50px 50px 15px;
+  border: 5px solid white;
+
+}
+
+.aboutpic2 {
+  border-radius: 50px 15px 15px 50px;
+  border: 5px solid white;
+}
+
+.aboutpic3 {
+  border-radius: 15px 50px 50px 15px;
+  border: 5px solid white;
+}
+
+.hr {
+  border-top: 5px solid black;
+  opacity: 1;
+  width: 50%;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  margin-top: 200px;
+}
   
   /* about cards */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('imgs/');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .side-navbar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: black;
+    transition: 0.5s;
+  }
+  
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: black;
+  }
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 250px;
+  }
+  
+  #menu-btn {
+    background-color: white;
+    color: black;
+    margin-left: -40px;
+  }
+  
+  .my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+  }

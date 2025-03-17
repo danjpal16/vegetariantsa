@@ -1,11 +1,18 @@
 <!doctype html>
 <html lang="en">
 
-
 <head>
-    <title>The Leafy Spoon</title>
+    <title>Title</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <!-- BOX ICONS CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="aboutus.css">
@@ -14,181 +21,174 @@
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button " data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="text-white nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="text-white nav-link" href="menu.html">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="text-white nav-link" href="aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="text-white nav-link" href="reservations.html">Reservations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="text-white nav-link" href="hourslocations.html">Hours & Locations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="text-white nav-link" href="team.html">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="text-white nav-link" href="events.html">Events</a>
-                    </li>
-                </ul>
-            </div>
+    <header>
+        <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+            <ul class="nav flex-column w-100">
+                <li class="nav-link">
+                    <a href="index.html"><span class="m-3" style="color: #A4BF20">Home</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="menu.html"><span class="m-3" style="color: #A4BF20">Menu</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="aboutus.html"><span class="m-3" style="color: #A4BF20">About Us</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="reservations.html"><span class="m-3" style="color: #A4BF20">Reservations</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="hourslocations.html"><span class="m-3" style="color: #A4BF20">Hours/Locations</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="team.html"><span class="m-3" style="color: #A4BF20">Team</span></a>
+                </li>
+                <li class="nav-link">
+                    <a href="events.html"><span class="m-3" style="color: #A4BF20">Events</span></a>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <!-- navbar -->
-    <div class="container-fluid p-0">
-        <div class="row g-0">
-            <div class="col-12">
-                <img class="aboutheader img-fluid" src="imgs/aboutusheader.jpg" alt="About Us Header">
-            </div>
+
+        <!-- Main Wrapper -->
+        <div class="p-1 my-container active-cont">
+            <!-- Top Nav -->
+            <nav class="navbar top-navbar navbar-light bg-black px-5">
+                <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+            </nav>
+            <!--End Top Nav -->
         </div>
-    </div>
+    </header>
+    <main>
 
 
 
-    <!-- about cards -->
-    <div class="container container1" id="aboutpage">
-        <div class="row row1 py-5">
-            <div class="card mb-3 card1" style="
-            max-width: 940px;
-            background-color: rgb(5, 63, 36) ;
-            border: 5px solid white;
-          ">
-                <div class="row g-0">
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                        <img src="imgs/daytonapic.png" class="img-fluid aboutpic1" alt="..." />
+        <!-- about cards -->
+        <div class="container container1" id="aboutpage">
+            <div class="row row1 py-5">
+                <div class="card mb-3 card1" style="
+        max-width: 940px;
+        background-color: rgb(5, 63, 36) ;
+        border: 5px solid white;
+      ">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <img src="imgs/daytonapic.png" class="img-fluid aboutpic1" alt="..." />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-white">
+                                <p class="card-text">
+                                    The Leafy Spoon is a cozy, family-owned café with a warm, inviting atmosphere,
+                                    perfect
+                                    for anyone seeking a delicious, vegetarian dining experience. Nestled in a charming
+                                    building that's been passed down through generations, this café is a staple of the
+                                    community, offering multiple intimate dining spaces, including a private backroom
+                                    ideal
+                                    for small gatherings or parties. The café's interior exudes a rustic yet modern
+                                    vibe,
+                                    with wooden tables, soft lighting, and artwork that adds to its cozy, home-like
+                                    feel.
+                                    Whether you're here for a quick bite or a leisurely meal with friends, The Leafy
+                                    Spoon
+                                    is the perfect spot to relax and enjoy fresh, flavorful food.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body text-white">
-                            <p class="card-text">
-                                The Leafy Spoon is a cozy, family-owned café with a warm, inviting atmosphere, perfect
-                                for anyone seeking a delicious, vegetarian dining experience. Nestled in a charming
-                                building that's been passed down through generations, this café is a staple of the
-                                community, offering multiple intimate dining spaces, including a private backroom ideal
-                                for small gatherings or parties. The café's interior exudes a rustic yet modern vibe,
-                                with wooden tables, soft lighting, and artwork that adds to its cozy, home-like feel.
-                                Whether you're here for a quick bite or a leisurely meal with friends, The Leafy Spoon
-                                is the perfect spot to relax and enjoy fresh, flavorful food.
-                            </p>
+                </div>
+            </div>
+
+            <hr class="hr" style="margin: auto" />
+
+            <div class="row row2 py-5">
+                <div class="card mb-3 card2" style="
+        max-width: 940px;
+        background-color: rgb(5, 63, 36);
+        border: 5px solid white;
+      ">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body text-white">
+                                <p class="card-text">
+                                    Our menu is a celebration of plant-based dishes, carefully crafted to mimic the
+                                    flavors
+                                    of traditional comfort food. From savory pastas to hearty salads, everything on the
+                                    menu
+                                    is designed to offer the satisfaction of classic meals while being entirely
+                                    vegetarian.
+                                    The Leafy Spoon is committed to making every bite as tasty as possible, ensuring
+                                    that
+                                    even those new to vegetarian cuisine can indulge without compromise. Each dish is
+                                    made
+                                    with the freshest ingredients, sourced locally from trusted farmers and small-scale
+                                    purveyors who share our values of sustainability and quality. Our produce comes from
+                                    nearby organic farms, ensuring the highest quality and flavor, while our grains and
+                                    dairy alternatives are sourced from local artisans who prioritize ethical practices.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <img src="imgs/aboupic2.png" class="img-fluid aboutpic2" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr" style="margin: auto" />
+
+            <div class="row row3 py-5">
+                <div class="card mb-3 card3" style="
+        max-width: 940px;
+        background-color: rgb(5, 63, 36);
+        border: 5px solid white;
+      ">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <img src="imgs/aboutpic3.png" class="img-fluid text-center aboutpic3" alt="..." />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-white">
+                                <p class="card-text">
+                                    At The Leafy Spoon, we pride ourselves on our ethical commitment to sustainability
+                                    and
+                                    animal welfare. As a vegetarian café, we aim to make a positive impact on the planet
+                                    by
+                                    offering meals that are both kind to animals and environmentally conscious. The
+                                    building
+                                    itself, rich in history and memories, has been renamed multiple times over the
+                                    years,
+                                    but the mission has always remained the same: to provide exceptional food in a
+                                    welcoming
+                                    setting, all while keeping our animal friends safe. By sourcing our ingredients
+                                    responsibly, we ensure that our menu not only supports the local economy but also
+                                    reflects our dedication to creating a more sustainable and compassionate food
+                                    system.
+                                    Come visit us and enjoy a meal that's not only delicious but also makes a
+                                    difference.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- about cards -->
 
-        <hr class="hr" style="margin: auto" />
-
-        <div class="row row2 py-5">
-            <div class="card mb-3 card2" style="
-            max-width: 940px;
-            background-color: rgb(5, 63, 36);
-            border: 5px solid white;
-          ">
-                <div class="row g-0">
-                    <div class="col-md-8">
-                        <div class="card-body text-white">
-                            <p class="card-text">
-                                Our menu is a celebration of plant-based dishes, carefully crafted to mimic the flavors
-                                of traditional comfort food. From savory pastas to hearty salads, everything on the menu
-                                is designed to offer the satisfaction of classic meals while being entirely vegetarian.
-                                The Leafy Spoon is committed to making every bite as tasty as possible, ensuring that
-                                even those new to vegetarian cuisine can indulge without compromise. Each dish is made
-                                with the freshest ingredients, sourced locally from trusted farmers and small-scale
-                                purveyors who share our values of sustainability and quality. Our produce comes from
-                                nearby organic farms, ensuring the highest quality and flavor, while our grains and
-                                dairy alternatives are sourced from local artisans who prioritize ethical practices.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                        <img src="imgs/aboupic2.png" class="img-fluid aboutpic2" alt="..." />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="hr" style="margin: auto" />
-
-        <div class="row row3 py-5">
-            <div class="card mb-3 card3" style="
-            max-width: 940px;
-            background-color: rgb(5, 63, 36);
-            border: 5px solid white;
-          ">
-                <div class="row g-0">
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                        <img src="imgs/aboutpic3.png" class="img-fluid text-center aboutpic3" alt="..." />
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body text-white">
-                            <p class="card-text">
-                                At The Leafy Spoon, we pride ourselves on our ethical commitment to sustainability and
-                                animal welfare. As a vegetarian café, we aim to make a positive impact on the planet by
-                                offering meals that are both kind to animals and environmentally conscious. The building
-                                itself, rich in history and memories, has been renamed multiple times over the years,
-                                but the mission has always remained the same: to provide exceptional food in a welcoming
-                                setting, all while keeping our animal friends safe. By sourcing our ingredients
-                                responsibly, we ensure that our menu not only supports the local economy but also
-                                reflects our dedication to creating a more sustainable and compassionate food system.
-                                Come visit us and enjoy a meal that's not only delicious but also makes a difference.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- about cards -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-        </script>
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
-
 
 </html>
