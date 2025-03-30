@@ -53,9 +53,7 @@
     grid-template-columns: repeat(7,1fr);
   }
 
-  .day {
-    
-  }
+ 
   
   .side-navbar {
     width: 250px;
@@ -212,3 +210,14 @@
   .container1 {
     margin-top: 200px;
   }
+
+
+/* send to dan */
+  .reservation-container {
+    max-width: 100px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
