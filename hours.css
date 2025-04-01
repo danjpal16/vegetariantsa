@@ -179,3 +179,25 @@ img {
   box-shadow: 0 0 10px rgb(255, 255, 255);
   color:#A4BF20;
 }
+
+.row12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.photo-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* Ensure the container takes full height */
+}
+
+.photo-container2 img {
+  width: 100%; /* Make sure the image scales properly */
+  height: 100%; /* Forces the image to take full height */
+  object-fit: cover; /* Ensures the image covers the full container */
+  border-radius: 8px; /* Matches the rounded corners */
+}
