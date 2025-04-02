@@ -78,12 +78,9 @@ main{
     }
     
     .photo-grid {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(38deg);
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     
     .photo {
@@ -98,7 +95,7 @@ main{
     
     .photo img {
       width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: cover;
     }
     
@@ -161,6 +158,12 @@ main{
     padding: 0;
     box-sizing: border-box;
   }
+
+  /* Container Styling */
+.container-fluid {
+  width: 100%;
+  padding: 1rem;
+}
   
   body {
     min-height: 100vh;
